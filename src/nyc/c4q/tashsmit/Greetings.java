@@ -12,25 +12,29 @@ public class Greetings {
 
         String greeting_1 = " ";
 
-        System.out.println("Please enter:");
-        System.out.println("Hello, Hola, How are ou or What is your name?");
-        greeting_1 = input.nextLine();
+        while (! greeting_1.equals("q")) {
 
-        if (greeting_1.equals("Hello")) {
+            System.out.println("Please enter a greeting: ");
+            greeting_1 = input.nextLine();
+
+            if (greeting_1.toLowerCase().equals("hello")) {
 
                 System.out.println("Hey!");
 
-            } else if (greeting_1.equals("Hola")) {
+            } else if (greeting_1.toLowerCase().equals("hola")) {
 
                 System.out.println("Como estas!");
-            } else if(greeting_1.equals("How are you")) {
+            } else if (greeting_1.toLowerCase().equals("how are you")) {
 
                 System.out.println("I'm great, thank you!");
             } else
-                System.out.println("My name is Bob");
-        }
+                System.out.println("You are awesome");
         }
 
     }
+}
+
+
+
 
 
